@@ -122,7 +122,7 @@ export type ListUser = {
 // No local mock users needed anymore as they are passed via props
 
 const LeaderboardRow = ({ user }: { user: ListUser }) => {
-  const [expanded, setExpanded] = useState(user.rank === 13); // Default expanded for the demo one
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <div
